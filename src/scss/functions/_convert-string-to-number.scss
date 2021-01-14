@@ -4,15 +4,15 @@
     }
 
     @else if $string==var(column-postfix-mobile) {
-        @return 1;
+        @return 2;
     }
 
     @else if $string==var(column-postfix-tablet) {
-        @return 1;
+        @return 3;
     }
 
     @else if $string==var(column-postfix-desktop) {
-        @return 1;
+        @return 4;
     }
 
     @error "Property #{$string} is not a valid value.";

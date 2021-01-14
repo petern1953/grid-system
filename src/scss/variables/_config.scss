@@ -8,11 +8,11 @@ $config: (grid: (size: 12,
             mobile: 6px,
             tablet: 7.5px,
             desktop: 9px)),
-    column: (classname: column,
-        postfix: (default: default, // column--default-12
-            mobile: mobile, // column--mobile-6
-            table: tablet, // column--tablet-4
-            desktop: desktop // column-desktop-3
+    column: (classname: col,
+        postfix: (default: xs, // column--default-12
+            mobile: sm, // column--mobile-6
+            tablet: md, // column--tablet-4
+            desktop: lg // column-desktop-3
         ),
         padding: (default: 10px,
             mobile: 12px,

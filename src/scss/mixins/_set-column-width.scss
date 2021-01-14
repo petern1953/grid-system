@@ -2,6 +2,7 @@
 @mixin set-column-width($viewport, $column-count) {
     $width: get-column-width($column-count);
     $number: convert-string-to-number($viewport);
+    @debug $number;
 
     @if $number==1 {
         width: $width;
