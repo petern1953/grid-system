@@ -1,24 +1,26 @@
 // .column--default-2
 @mixin set-column-width($viewport, $column-count) {
+    $width: get-column-width($column-count);
+
     @if $viewport==var(column-postfix-default) {
-        width: calc(100% * $column-count / var(grid-size));
+        width: $width;
     }
 
     @else if $viewport==var(column-postfix-mobile) {
         @include mobile-up {
-            width: calc(100% * $column-count / var(grid-size));
+            width: $width;
         }
     }
 
     @else if $viewport==var(column-postfix-tablet) {
         @include tablet-up {
-            width: calc(100% * $column-count / var(grid-size));
+            width: $width;
         }
     }
 
     @else if $viewport==var(column-postfix-desktop) {
         @include desktop-up {
-            width: calc(100% * $column-count / var(grid-size));
+            width: $width;
         }
     }
 }
